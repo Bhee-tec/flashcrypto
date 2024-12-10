@@ -1,0 +1,322 @@
+<html>
+<head>
+    <title>Flash Coin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 1.25rem; /* Increase font size for mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col md:flex-row">
+    <!-- Sidebar -->
+    <div class="w-full md:w-1/4 bg-blue-500 h-auto md:h-screen p-5">
+        <h1 class="text-white text-2xl font-bold mb-10">Flash Coin Dashboard</h1>
+        <ul>
+            <li class="mb-4">
+                <a href="#" class="text-white text-lg"><i class="fas fa-home mr-2"></i>Home</a>
+            </li>
+            <li class="mb-4">
+                <a href="#" class="text-white text-lg"><i class="fas fa-user mr-2"></i>Profile</a>
+            </li>
+            <li class="mb-4">
+                <a href="#" class="text-white text-lg"><i class="fas fa-cog mr-2"></i>Settings</a>
+            </li>
+            <li class="mb-4">
+                <a href="#" class="text-white text-lg"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-full md:w-3/4 p-10">
+        <div class="mb-10">
+            <h2 class="text-3xl font-bold text-black mb-5">Select Cryptocurrency</h2>
+            <div class="flex space-x-4 flex-wrap">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-2" onclick="showSection('bitcoin')">Bitcoin Flash</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-2" onclick="showSection('ethereum')">USDT Flash</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-2" onclick="showSection('litecoin')">BTC Fantom</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-2" onclick="showSection('ripple')">USDT fantom</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-2" onclick="showSection('cardano')">Frapped BTC</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-2" onclick="showSection('polkadot')">USDC Fantom</button>
+            </div>
+        </div>
+
+        <div id="bitcoin" class="hidden">
+            <h3 class="text-2xl font-bold text-black mb-5">Bitcoin Flash</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Price</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Fee</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">$500</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">$1,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$50,000</td>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$100,000</td>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="ethereum" class="hidden">
+            <h3 class="text-2xl font-bold text-black mb-5">Usdt Flash</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Price</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Fee</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">$500</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">$1,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$50,000</td>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$100,000</td>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="litecoin" class="hidden">
+            <h3 class="text-2xl font-bold text-black mb-5">BTC Fantom</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Price</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Fee</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">$500</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">$1,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$50,000</td>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$100,000</td>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="ripple" class="hidden">
+            <h3 class="text-2xl font-bold text-black mb-5">Usdt Fantom</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Price</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Fee</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">$500</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">$1,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$50,000</td>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$100,000</td>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="cardano" class="hidden">
+            <h3 class="text-2xl font-bold text-black mb-5">Usdt Fantom</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Price</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Fee</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">$500</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">$1,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$50,000</td>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$100,000</td>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+        </div>
+
+        <div id="polkadot" class="hidden">
+            <h3 class="text-2xl font-bold text-black mb-5">Usdc Fantom</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Price</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Fee</th>
+                        <th class="py-2 px-4 bg-gray-200 text-left text-black">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">$500</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">$1,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$50,000</td>
+                        <td class="py-2 px-4 border-b">$5,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">$100,000</td>
+                        <td class="py-2 px-4 border-b">$10,000</td>
+                        <td class="py-2 px-4 border-b">
+                            <a href="/login systerm/payment.html"><button class="bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function showSection(crypto) {
+            document.getElementById('bitcoin').classList.add('hidden');
+            document.getElementById('ethereum').classList.add('hidden');
+            document.getElementById('litecoin').classList.add('hidden');
+            document.getElementById('ripple').classList.add('hidden');
+            document.getElementById('cardano').classList.add('hidden');
+            document.getElementById('polkadot').classList.add('hidden');
+            document.getElementById(crypto).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
